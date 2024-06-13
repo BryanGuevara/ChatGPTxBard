@@ -1,3 +1,4 @@
+
 # Aplicación de Gestión de Tareas
 
 Esta es una aplicación simple de gestión de tareas basada en consola escrita en Java.
@@ -17,3 +18,21 @@ Para ejecutar la aplicación localmente, sigue estos pasos:
 
    ```bash
    git clone <URL_del_repositorio>
+   ```
+
+2. **Compila los archivos Java**:
+
+   ```bash
+   javac -d bin src/main/java/*.java
+   ```
+
+3. **Ejecuta la aplicación**:
+
+   ```bash
+   java -cp bin main.java.TaskManagerApp
+   ```
+
+## Uso
+
+- Al iniciar la aplicación, verás un menú con opciones para añadir, eliminar, listar y marcar tareas.
+- Sigue las instrucciones en pantalla para interactuar con la aplicación.
