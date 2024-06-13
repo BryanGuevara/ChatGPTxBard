@@ -14,7 +14,14 @@ public class TaskManager {
     public void start() {
         while (true) {
             showMenu();
-            int choice = Integer.parseInt(scanner.nextLine());
+            String input = scanner.nextLine();
+            int choice;
+            try {
+                choice = Integer.parseInt(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter a number.");
+                continue;
+            }
             switch (choice) {
                 case 1:
                     addTask();
@@ -30,6 +37,7 @@ public class TaskManager {
                     break;
                 case 5:
                     System.out.println("Exiting...");
+                    scanner.close();
                     return;
                 default:
                     System.out.println("Invalid choice. Please try again.");
