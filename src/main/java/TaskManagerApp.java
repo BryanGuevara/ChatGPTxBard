@@ -1,6 +1,5 @@
 package main.java;
 
-// src/main/java/TaskManagerApp.java
 public class TaskManagerApp {
     public static void main(String[] args) {
         try {
@@ -11,10 +10,19 @@ public class TaskManagerApp {
             taskList.addTask(task1);
             taskList.addTask(task2);
 
-            // Rest of the code...
+            System.out.println("Current tasks:");
+            for (Task task : taskList.getTasks()) {
+                System.out.println(task);
+            }
+
+            task1.markAsCompleted();
+
+            System.out.println("\nTasks after completing one:");
+            for (Task task : taskList.getTasks()) {
+                System.out.println(task);
+            }
         } catch (Exception e) {
             System.out.println("An error occurred: " + e.getMessage());
         }
     }
 }
-
