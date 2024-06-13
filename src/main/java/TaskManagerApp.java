@@ -1,10 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Main.java;
+package main.java;
 
-// src/main/java/TaskManagerApp.java
 public class TaskManagerApp {
     public static void main(String[] args) {
         TaskList taskList = new TaskList();

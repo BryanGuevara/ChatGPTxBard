@@ -1,5 +1,5 @@
-package Main.java;
-// src/main/java/TaskList.java
+package main.java;
+
 import java.util.ArrayList;
 import java.util.List;
 

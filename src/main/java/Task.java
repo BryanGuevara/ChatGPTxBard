@@ -1,4 +1,3 @@
-// src/main/java/Task.java
 package main.java;
 
 public class Task {
