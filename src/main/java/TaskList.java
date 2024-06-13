@@ -11,6 +11,9 @@ public class TaskList {
     }
 
     public void addTask(Task task) {
+        if (tasks.stream().anyMatch(t -> t.getId() == task.getId())) {
+            throw new IllegalArgumentException("Task with the same ID already exists.");
+        }
         tasks.add(task);
     }
 
