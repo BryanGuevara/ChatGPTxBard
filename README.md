@@ -17,7 +17,7 @@ Para ejecutar la aplicación localmente, sigue estos pasos:
 1. **Clona el repositorio**:
 
    ```bash
-   git clone <URL_del_repositorio>
+   git clone https://github.com/BryanGuevara/ChatGPTxBard.git
    ```
 
 2. **Compila los archivos Java**:
